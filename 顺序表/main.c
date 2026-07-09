@@ -90,3 +90,24 @@
         //return true;
     //}
     //使用前要先定义一个同类型变量e
+
+//顺序表----按位查找 (获取在L中位序为i的元素的值)
+    //静态分配
+    //ElemType GetElem(SqList L,int i) {
+        //return L -> data[i-1];
+    //}
+
+    //动态分配
+    //ElemType GetElem(SqList L,int i) {
+        //return L -> data[i-1];
+    //}
+
+//顺序表----按值查找 (在L中查找具有给定关键字值的元素)
+    //int LocateElem(SeqList L,int e) {
+        //for (int i = 0; i < L -> length; i++) {
+            //if (L -> data[i] == e) { (两个结构类型元素不能用==比较是否相等,要自己写代码或者函数分别比较结构体里的变量是否相等)
+                //return i+1;
+            //}
+        //}
+        //return 0;
+    //}
