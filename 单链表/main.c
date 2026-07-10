@@ -22,7 +22,7 @@
 
 //单链表----不带头结点的初始化
     //初始化一个空的单链表
-    //bool InitList (LinkList * L) {
+    //bool InitList (LinkList L) {
         //L = NULL; (空表,暂时还没有结点)
         //return true;
     //}
@@ -37,7 +37,7 @@
     //}
 
 //单链表----带头结点的初始化
-    //bool InitList (LinkList * L) {
+    //bool InitList (LinkList L) {
         //L = (LNode *) malloc(sizeof(LNode)); (分配一个头结点)
         //if (L == NULL) { (内存不足,分配失败)
             //return false;
@@ -60,7 +60,7 @@
     //}
 
 //单链表----按位序插入 (带头结点)
-    //bool ListInsert (LinkList *L,int i,ElemType e) {
+    //bool ListInsert (LinkList L,int i,ElemType e) {
         //if (i < 1) {
             //return false;
         //}
@@ -81,7 +81,7 @@
     //}
 
 //单链表----按位序插入 (不带头结点)
-    //bool ListInsert (LinkList *L,int i,ElemType e) {
+    //bool ListInsert (LinkList L,int i,ElemType e) {
         //if (i < 1) {
             //return false;
         //}
@@ -143,7 +143,7 @@
     //}
 
 //单链表----按位序删除 (带头结点)
-    //bool ListDelete (LinkList *L,int i,ElemType *e) {
+    //bool ListDelete (LinkList L,int i,ElemType *e) {
         //if (i < 1) {
             //return false;
         //}
@@ -214,7 +214,7 @@
     //}
 
 //单链表----尾插法建立单链表
-    //LinkList List_TailInsert (LinkList *L) { (正向建立单链表)
+    //LinkList List_TailInsert (LinkList L) { (正向建立单链表)
         //int x; (设置ElemType为整型)
         //L = (LinkList)malloc(sizeof(LNode)); (建立头结点)
         //LNode *s,*r = L; (r为表尾指针)
@@ -231,7 +231,7 @@
     //}
 
 //单链表----头插法建立单链表
-    //LinkList List_HeadInsert (LinkList *L) { (逆向建立单链表)
+    //LinkList List_HeadInsert (LinkList L) { (逆向建立单链表)
         //LNode *s;
         //int x;
         //L = (LinkList) malloc (sizeof (LNode)); (创建头结点)
