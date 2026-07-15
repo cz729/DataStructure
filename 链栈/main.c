@@ -43,6 +43,9 @@ bool Pop(LiStack *s, int *x) {
     if (s == NULL) {
         return false;
     }
+    if (s->next == NULL) {
+        return false;
+    }
     LiStack *p = s->next;
     *x = p->data;
     s->next = p->next;
@@ -55,7 +58,25 @@ bool GetTop(LiStack *s, int *x) {
     if (s == NULL) {
         return false;
     }
-    *x = s->data;
+    if (s->next == NULL) {
+        return false;
+    }
+    *x = s->next->data;
+    return true;
+}
+
+//销毁栈
+bool DestroyStack(LiStack *s) {
+    if (s == NULL) {
+        return false;
+    }
+    LiStack *p = s->next;
+    while (p != NULL) {
+        LiStack *q = p->next;
+        free(p);
+        p = q;
+    }
+    s->next = NULL;
     return true;
 }
 
